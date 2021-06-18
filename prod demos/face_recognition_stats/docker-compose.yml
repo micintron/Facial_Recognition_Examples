@@ -1,0 +1,13 @@
+version: '2.3'
+
+services:
+  face_recognition:
+    build: .
+    image: face_recognition
+    working_dir: /face_recognition
+    volumes:
+      - ./:/face_recognition
+    ports:
+      - "80:8000"
+    #Uncomment this line to run the example on the GPU (requires Nvidia-Docker)
+    # runtime: nvidia

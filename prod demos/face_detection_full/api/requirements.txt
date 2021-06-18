@@ -1,0 +1,7 @@
+flask==1.1.1
+gunicorn==19.9.0
+opencv-contrib-python==4.*
+numpy==1.18.*
+matplotlib==3.*
+gunicorn
+face-recognition

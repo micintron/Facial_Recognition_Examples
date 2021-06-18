@@ -1,0 +1,21 @@
+<!doctype html>
+    <title>Identity Matching</title>
+    <h1>Match an Identity</h1>
+    <form method=post action='/process' enctype=multipart/form-data>
+      <label for=test>Upload an image of an unknown person:</label>
+      <input type=file id=test name=test_image required>
+      <br/>
+      <br/>
+      <br/>
+      <label for=known>Upload a known image:</label>
+      <input type=file id=known name=known_image required>
+      <br/>
+      <br/>
+      <br/>
+      Choose a tolerance value for strictness of comparison (default is 0.6):
+      <input id="number" type="number" min=0 max=1 step=0.1 name=tolerance value="0.6">
+      <br/>
+      <br/>
+      <br/>
+      <input type=submit value=Upload>
+    </form>
